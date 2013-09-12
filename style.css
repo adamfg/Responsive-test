@@ -1,0 +1,264 @@
+/*
+Theme Name: Sandbox Theme
+Theme URI: http://adamfg.co.uk/dev
+Description: The sandbox theme for playing with.
+Author: Adam FG
+Author URI: http://adamfg.co.uk
+Version: 0.01
+Tags: none
+
+License:
+License URI:
+
+CLP
+*/
+
+body {
+    color: #000;
+    font-size: 85%; /* baseisnormally 14pt */
+    font-family:sans-serif "Arial";
+    line-height: 150%;
+    background-color:#e9e8ea;
+}
+
+/* style links early and removedecor! */
+
+a {
+    text-decoration:none
+}
+
+a:link, a:visited{
+}
+
+a:hover, a:active{
+}
+
+.body {
+    margin: 0 auto; /* this centres everything once you seta width (below) */
+    width: 70%;
+    clear:both; /*this makes your container so no floating element go L or R */
+}
+
+.header img{
+    width: 30%; /*replace percentage with a fixed value if integral to design */
+    height: auto;
+    margin: 1% 0; /*adds 1% whitespace above and below*/
+}
+
+.header nav{
+    background-color: #666;
+    height: 40px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.header nav ul{
+    list-style: none;
+    margin: 0 auto;
+    
+}
+
+.header nav ul li{
+    float:left;
+    display:inline;
+}
+
+.header nav a:link, .header nav a:visited{
+    color:#FFF;
+    display:inline-block;
+    padding:10px 25px;
+    height:20px;
+}
+
+.header nav a:hover, .header nav a:active{
+    background-color:#DC4E00;
+    COLOR:#FFF;
+    text-shadow:none;
+}
+
+.maincontent{
+    line-height: 25px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.content{
+    width:70%;
+    height:auto;
+    float:left;
+}
+
+.content a:link, .content a:visited{
+    color:#DC4E00;
+    display:inline-block;
+    padding:10px 25px;
+    height:20px;
+}
+
+.topcontent{
+    background-color:#fff;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    padding: 3% 5%;
+    margin-top:2%;
+}
+        
+.bottomcontent{
+    background-color:#fff;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    padding: 3% 5%;
+    margin-top:2%;
+}
+
+.postinfo{
+    font-style:italic;
+    font-size:85%;
+    color:grey;
+
+}
+
+.topsidebar{
+    width: 22%;
+    float:left;
+    background-color:#fff;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    margin:1.5% 0 1.5% 1.5%;
+    padding: 2% 3%;
+
+}
+
+
+.middlesidebar{
+     width: 22%;
+    float:left;
+    background-color:#fff;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    margin:0% 0 0% 1.5%;
+    padding: 2% 3%;
+}
+
+
+.bottomsidebar{
+    width: 22%;
+    height:auto;
+    float:left;
+    background-color:#fff;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    margin:2% 0 2% 1.5%;
+    padding: 2% 3%;
+}
+        
+.mainfooter{
+    width:100%;
+    height:40px;
+    float:left;
+    background-color:#666;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    margin:2% 0;
+    padding: 0.5% 0.5%;
+}
+
+.mainfooter p{
+    width:92%;
+    margin: 1% auto;
+    color:#fff;
+    font-family:sans-serif "Arial";
+
+}
+
+
+/*responsive at 52 minutes
+Code below activates at screen sizes < 600px.  Disallows sub 150
+
+*/
+
+@media only screen and (min-width: 150px) and (max-width: 600px)
+    {
+    .body {
+        margin: 0 auto; /* this centres everything once you seta width (below) */
+        width: 95%;
+        /*clear:both; included from above, so no floating element go L or R */
+    }
+    .header img{
+        width: 100%;
+    }
+    
+    .header nav{
+        height: 160px;
+    }
+    
+    .header nav ul{
+        padding-left:0;
+    }
+
+    .header nav ul li{
+        width:100%;
+        margin: 0auto;
+        text-align:center;
+    }
+
+    .header nav a:link, .header nav a:visited{
+
+        font-size:150%;
+    
+    }
+    
+    .header nav a:hover, .header nav a:active{
+        font-size:150%;
+        background-color:#DC4E00;
+        COLOR:#FFF;
+        text-shadow:none;
+        display:block;
+        border-radius:5px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;  
+    }
+        
+    .content{
+        width:100%;
+        height:auto;
+    }
+        
+    .topsidebar{
+        width: 90%;
+        margin:2% 1% 2% 0%;
+        padding: 3% 5%;
+    }
+    
+    
+    .middlesidebar{
+        width: 90%;
+        margin:0% 1% 2% 0%;
+        padding: 3% 5%;
+        }
+    
+    .bottomsidebar{
+        width: 90%;
+        margin:0% 1% 0% 0%;
+        padding: 3% 5%;
+    }
+    
+    .mainfooter{
+
+        margin:2% 0;
+        padding-top: 3%;
+    }
+    
+    .mainfooter p{
+        text-align:center
+    }
+    
+}
